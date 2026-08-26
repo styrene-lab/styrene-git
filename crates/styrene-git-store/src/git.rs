@@ -14,6 +14,7 @@ pub(crate) fn run(
     command
         .env("GIT_DIR", git_dir)
         .args(["-c", "core.longpaths=true"])
+        .args(["-c", "core.fsync=loose-object"])
         .args(args);
     if let Some(directory) = object_directory {
         command
@@ -31,6 +32,7 @@ pub(crate) fn run_with_path(
     let mut command = Command::new("git");
     command
         .args(["-c", "core.longpaths=true"])
+        .args(["-c", "core.fsync=loose-object"])
         .args(args)
         .arg(path);
     execute(command, operation.into(), None).map(|output| output.stdout)
@@ -46,6 +48,7 @@ pub(crate) fn run_bounded(
     command
         .env("GIT_DIR", git_dir)
         .args(["-c", "core.longpaths=true"])
+        .args(["-c", "core.fsync=loose-object"])
         .args(args)
         .stdin(Stdio::piped())
         .stdout(Stdio::piped())

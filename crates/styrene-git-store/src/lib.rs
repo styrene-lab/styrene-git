@@ -597,11 +597,6 @@ fn promote_objects(source: &Path, destination: &Path) -> Result<(), StoreError> 
                 .map_err(|error| io_error(&destination_path, error))?;
             promote_objects(&source_path, &destination_path)?;
         } else if !destination_path.exists() {
-            let file =
-                fs::File::open(&source_path).map_err(|error| io_error(&source_path, error))?;
-            file.sync_all()
-                .map_err(|error| io_error(&source_path, error))?;
-            drop(file);
             match fs::hard_link(&source_path, &destination_path) {
                 Ok(()) => {}
                 Err(error) if error.kind() == std::io::ErrorKind::AlreadyExists => {}
