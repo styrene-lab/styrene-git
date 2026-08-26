@@ -11,7 +11,10 @@ pub(crate) fn run(
     object_directory: Option<&Path>,
 ) -> Result<Vec<u8>, StoreError> {
     let mut command = Command::new("git");
-    command.env("GIT_DIR", git_dir).args(args);
+    command
+        .env("GIT_DIR", git_dir)
+        .args(["-c", "core.longpaths=true"])
+        .args(args);
     if let Some(directory) = object_directory {
         command
             .env("GIT_OBJECT_DIRECTORY", directory)
@@ -26,7 +29,10 @@ pub(crate) fn run_with_path(
     operation: &str,
 ) -> Result<Vec<u8>, StoreError> {
     let mut command = Command::new("git");
-    command.args(args).arg(path);
+    command
+        .args(["-c", "core.longpaths=true"])
+        .args(args)
+        .arg(path);
     execute(command, operation.into(), None).map(|output| output.stdout)
 }
 
@@ -39,6 +45,7 @@ pub(crate) fn run_bounded(
     let mut command = Command::new("git");
     command
         .env("GIT_DIR", git_dir)
+        .args(["-c", "core.longpaths=true"])
         .args(args)
         .stdin(Stdio::piped())
         .stdout(Stdio::piped())

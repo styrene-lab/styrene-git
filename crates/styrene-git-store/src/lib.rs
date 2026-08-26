@@ -611,6 +611,7 @@ fn promote_objects(source: &Path, destination: &Path) -> Result<(), StoreError> 
             let file = fs::File::open(&temporary).map_err(|error| io_error(&temporary, error))?;
             file.sync_all()
                 .map_err(|error| io_error(&temporary, error))?;
+            drop(file);
             match fs::rename(&temporary, &destination_path) {
                 Ok(()) => {}
                 Err(error) if error.kind() == std::io::ErrorKind::AlreadyExists => {
