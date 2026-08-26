@@ -7,7 +7,6 @@ use std::collections::BTreeMap;
 use std::fs;
 use std::path::{Path, PathBuf};
 use std::sync::atomic::{AtomicU64, Ordering};
-use std::time::{SystemTime, UNIX_EPOCH};
 
 use error::io_error;
 pub use error::StoreError;
@@ -167,12 +166,8 @@ impl Repository {
         let root = self.path.join("q");
         fs::create_dir_all(&root).map_err(|source| io_error(&root, source))?;
         for _ in 0..100 {
-            let timestamp = SystemTime::now()
-                .duration_since(UNIX_EPOCH)
-                .unwrap_or_default()
-                .as_nanos();
             let sequence = QUARANTINE_SEQUENCE.fetch_add(1, Ordering::Relaxed);
-            let path = root.join(format!("{}-{timestamp}-{sequence}", std::process::id()));
+            let path = root.join(format!("{}-{sequence}", std::process::id()));
             match fs::create_dir(&path) {
                 Ok(()) => {
                     let objects = path.join("objects");
