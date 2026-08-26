@@ -164,7 +164,7 @@ impl Repository {
     }
 
     pub fn begin_quarantine(&self) -> Result<Quarantine, StoreError> {
-        let root = self.path.join("styrene/quarantine");
+        let root = self.path.join("q");
         fs::create_dir_all(&root).map_err(|source| io_error(&root, source))?;
         for _ in 0..100 {
             let timestamp = SystemTime::now()
