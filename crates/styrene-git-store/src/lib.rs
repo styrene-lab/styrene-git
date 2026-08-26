@@ -603,7 +603,7 @@ fn promote_objects(source: &Path, destination: &Path) -> Result<(), StoreError> 
             promote_objects(&source_path, &destination_path)?;
         } else if !destination_path.exists() {
             let temporary = destination_path.with_extension(format!(
-                "styrene-{}-{}",
+                "s{}-{}",
                 std::process::id(),
                 QUARANTINE_SEQUENCE.fetch_add(1, Ordering::Relaxed)
             ));
