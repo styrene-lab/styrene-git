@@ -1,0 +1,21 @@
+contents:
+  repositories:
+    - https://packages.wolfi.dev/os
+    - '@local /work/artifacts/packages'
+  keyring:
+    - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+    - /work/artifacts/packages/local-melange.rsa.pub
+  packages:
+    - ca-certificates-bundle
+    - git
+    - styrene-git-functional@local
+
+entrypoint:
+  command: /usr/bin/styrene-git-lab
+
+environment:
+  PATH: /usr/sbin:/sbin:/usr/bin:/bin
+
+archs:
+  - amd64
+  - arm64

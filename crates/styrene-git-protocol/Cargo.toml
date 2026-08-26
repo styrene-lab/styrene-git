@@ -1,0 +1,22 @@
+[package]
+name = "styrene-git-protocol"
+description = "Carrier-neutral replication protocol for Styrene Git"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+blake3.workspace = true
+minicbor.workspace = true
+styrene-git-core.workspace = true
+styrene-git-store.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+ed25519-dalek.workspace = true
+hex.workspace = true
+
+[lints]
+workspace = true

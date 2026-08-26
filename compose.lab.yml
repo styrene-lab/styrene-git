@@ -1,0 +1,132 @@
+services:
+  hub-daemon:
+    image: localhost/styrened-git-lab:dev
+    entrypoint: ["styrened"]
+    command:
+      ["--config", "/etc/styrene/config.toml", "--transport", "0.0.0.0:4242", "--rpc", "127.0.0.1:4243", "--socket", "/run/styrened/control.sock", "--announce-interval-secs", "10"]
+    environment:
+      STYRENE_CONFIG_DIR: /state/config
+      STYRENE_DATA_DIR: /state/data
+      LXMF_DISPLAY_NAME: hub
+    volumes:
+      - ./infra/styrened/hub.toml:/etc/styrene/config.toml:ro
+      - hub-daemon-state:/state
+      - hub-daemon-run:/run/styrened
+    networks: [backbone]
+
+  alice-daemon:
+    image: localhost/styrened-git-lab:dev
+    entrypoint: ["styrened"]
+    command:
+      ["--config", "/etc/styrene/config.toml", "--transport", "0.0.0.0:4242", "--rpc", "127.0.0.1:4243", "--socket", "/run/styrened/control.sock", "--announce-interval-secs", "10"]
+    environment:
+      STYRENE_CONFIG_DIR: /state/config
+      STYRENE_DATA_DIR: /state/data
+      LXMF_DISPLAY_NAME: alice
+    volumes:
+      - ./infra/styrened/alice.toml:/etc/styrene/config.toml:ro
+      - alice-daemon-state:/state
+      - alice-daemon-run:/run/styrened
+    networks: [backbone]
+
+  bob-daemon:
+    image: localhost/styrened-git-lab:dev
+    entrypoint: ["styrened"]
+    command:
+      ["--config", "/etc/styrene/config.toml", "--transport", "0.0.0.0:4242", "--rpc", "127.0.0.1:4243", "--socket", "/run/styrened/control.sock", "--announce-interval-secs", "10"]
+    environment:
+      STYRENE_CONFIG_DIR: /state/config
+      STYRENE_DATA_DIR: /state/data
+      LXMF_DISPLAY_NAME: bob
+    volumes:
+      - ./infra/styrened/bob.toml:/etc/styrene/config.toml:ro
+      - bob-daemon-state:/state
+      - bob-daemon-run:/run/styrened
+    networks: [backbone]
+
+  carol-daemon:
+    image: localhost/styrened-git-lab:dev
+    entrypoint: ["styrened"]
+    command:
+      ["--config", "/etc/styrene/config.toml", "--transport", "0.0.0.0:4242", "--rpc", "127.0.0.1:4243", "--socket", "/run/styrened/control.sock", "--announce-interval-secs", "10"]
+    environment:
+      STYRENE_CONFIG_DIR: /state/config
+      STYRENE_DATA_DIR: /state/data
+      LXMF_DISPLAY_NAME: carol
+    volumes:
+      - ./infra/styrened/carol.toml:/etc/styrene/config.toml:ro
+      - carol-daemon-state:/state
+      - carol-daemon-run:/run/styrened
+    networks: [backbone]
+
+  alice:
+    image: localhost/styrene-git-functional:dev
+    command: ["operator", "alice", "1", "0.0.0.0:7800", "/state"]
+    volumes:
+      - alice-repository-state:/state
+      - alice-daemon-run:/run/styrened:ro
+    networks:
+      control:
+        aliases: [alice-control]
+      carrier:
+        aliases: [alice-carrier]
+
+  bob:
+    image: localhost/styrene-git-functional:dev
+    command: ["operator", "bob", "2", "0.0.0.0:7800", "/state"]
+    volumes:
+      - bob-repository-state:/state
+      - bob-daemon-run:/run/styrened:ro
+    networks:
+      control:
+        aliases: [bob-control]
+      carrier:
+        aliases: [bob-carrier]
+
+  carol:
+    image: localhost/styrene-git-functional:dev
+    command: ["operator", "carol", "3", "0.0.0.0:7800", "/state"]
+    volumes:
+      - carol-repository-state:/state
+      - carol-daemon-run:/run/styrened:ro
+    networks:
+      control:
+        aliases: [carol-control]
+      carrier:
+        aliases: [carol-carrier]
+
+  backbone-check:
+    image: localhost/styrened-git-lab:dev
+    entrypoint: ["bash", "/harness/check-backbone.sh"]
+    environment:
+      BACKBONE_TIMEOUT_SECONDS: "120"
+      NO_COLOR: "1"
+    volumes:
+      - ./infra/styrened:/harness:ro
+      - ./artifacts:/artifacts
+      - hub-daemon-run:/run/hub:ro
+      - alice-daemon-run:/run/alice:ro
+      - bob-daemon-run:/run/bob:ro
+      - carol-daemon-run:/run/carol:ro
+    networks: [backbone]
+
+networks:
+  backbone:
+    internal: true
+  control:
+    internal: true
+  carrier:
+    internal: true
+
+volumes:
+  hub-daemon-state:
+  alice-daemon-state:
+  bob-daemon-state:
+  carol-daemon-state:
+  hub-daemon-run:
+  alice-daemon-run:
+  bob-daemon-run:
+  carol-daemon-run:
+  alice-repository-state:
+  bob-repository-state:
+  carol-repository-state:

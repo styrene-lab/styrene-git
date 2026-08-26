@@ -1,0 +1,16 @@
+[package]
+name = "styrene-git-remote"
+description = "Git remote-helper integration for Styrene repositories"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+styrene-git-core.workspace = true
+styrene-git-ipc.workspace = true
+thiserror.workspace = true
+
+[lints]
+workspace = true

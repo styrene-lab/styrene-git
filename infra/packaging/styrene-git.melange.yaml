@@ -1,0 +1,28 @@
+package:
+  name: styrene-git-functional
+  version: 0.1.0
+  epoch: 0
+  description: Test-only multi-operator functional harness for Styrene Git
+  copyright:
+    - license: MIT
+
+environment:
+  contents:
+    repositories:
+      - https://packages.wolfi.dev/os
+    keyring:
+      - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+    packages:
+      - build-base
+      - busybox
+      - git
+      - rust-1.97
+
+pipeline:
+  - runs: |
+      cargo fmt --all -- --check
+      cargo test --workspace --all-targets
+      cargo clippy --workspace --all-targets -- -D warnings
+      cargo build --release --locked --bin styrene-git-lab
+      install -Dm755 target/release/styrene-git-lab \
+        "${{targets.destdir}}/usr/bin/styrene-git-lab"

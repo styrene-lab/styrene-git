@@ -1,0 +1,11 @@
+role = "full_node"
+
+[[interfaces]]
+type = "tcp_client"
+enabled = true
+host = "hub-daemon"
+port = 4242
+name = "backbone-hub"
+
+[rbac]
+default_role = "operator"

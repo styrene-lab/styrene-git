@@ -1,0 +1,4448 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "sbom-sha256:0ca98c07370df09fc5d404532ee0558e8e28a53f89c444b6ffc755d25a3f04ea",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-08-25T13:25:39Z",
+    "creators": [
+      "Tool: apko (v1.2.40)",
+      "Organization: Chainguard, Inc"
+    ],
+    "licenseListVersion": "3.27"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/apko/",
+  "documentDescribes": [
+    "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "name": "sha256:b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "versionInfo": "sha256:b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "filesAnalyzed": false,
+      "description": "apko container image",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "CONTAINER",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/styrene-git-functional@sha256:b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d?arch=arm64\u0026mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-ImageLayer-sha256-0ca98c07370df09fc5d404532ee0558e8e28a53f89c444b6ffc755d25a3f04ea",
+      "name": "sha256:0ca98c07370df09fc5d404532ee0558e8e28a53f89c444b6ffc755d25a3f04ea",
+      "versionInfo": "20230201",
+      "filesAnalyzed": false,
+      "description": "apko operating system layer",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "CONTAINER",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/styrene-git-functional@sha256:0ca98c07370df09fc5d404532ee0558e8e28a53f89c444b6ffc755d25a3f04ea?arch=arm64\u0026mediaType=application%2Fvnd.oci.image.layer.v1.tar%2Bgzip\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-OperatingSystem-wolfi",
+      "name": "wolfi",
+      "versionInfo": "20230201",
+      "filesAnalyzed": false,
+      "description": "Operating System",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "OPERATING_SYSTEM"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-wolfi-baselayout-20230201-r29",
+      "name": "wolfi-baselayout",
+      "versionInfo": "20230201-r29",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/wolfi-baselayout@20230201-r29?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-wolfi-baselayout.yaml-35e7b4713442869116936fae3fe8cf7c69bc9054",
+      "name": "wolfi-baselayout.yaml",
+      "versionInfo": "35e7b4713442869116936fae3fe8cf7c69bc9054",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@35e7b4713442869116936fae3fe8cf7c69bc9054#wolfi-baselayout.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-wolfi-baselayout-64d02eed92ca55e3",
+      "name": "wolfi-baselayout",
+      "versionInfo": "20230201-r29",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "baselayout data for Wolfi",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:wolfi-baselayout:wolfi-baselayout:20230201-r29:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:wolfi-baselayout:wolfi_baselayout:20230201-r29:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:wolfi_baselayout:wolfi-baselayout:20230201-r29:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:wolfi_baselayout:wolfi_baselayout:20230201-r29:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:wolfi:wolfi-baselayout:20230201-r29:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:wolfi:wolfi_baselayout:20230201-r29:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/wolfi-baselayout@20230201-r29?arch=aarch64\u0026origin=wolfi-baselayout",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-wolfi-baselayout",
+      "name": "wolfi-baselayout",
+      "versionInfo": "20230201-r29",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ca-certificates-bundle-20260413-r1",
+      "name": "ca-certificates-bundle",
+      "versionInfo": "20260413-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MPL-2.0 AND MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ca-certificates-bundle@20260413-r1?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-ca-certificates.yaml-70f58e72ab3f2139f773ba5c148b573e8d835baa",
+      "name": "ca-certificates.yaml",
+      "versionInfo": "70f58e72ab3f2139f773ba5c148b573e8d835baa",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@70f58e72ab3f2139f773ba5c148b573e8d835baa#ca-certificates.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-gitlab.alpinelinux.org-alpine-ca-certificates-20260413-721ff6606b8c145755691d6cf87088ae7ff3d346-0",
+      "name": "alpine/ca-certificates",
+      "versionInfo": "20260413",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MPL-2.0 AND MIT",
+      "downloadLocation": "https://tarballs.cgr.dev/a/f7f6555663adc30d4e3c43a90ddef6942dabe93d06f7a7201cf29d993222346a-721ff6606b8c145755691d6cf87088ae7ff3d346.tar.gz",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/alpine%2Fca-certificates@20260413?vcs_url=git%2Bhttps:%2F%2Fgitlab.alpinelinux.org%2Falpine%2Fca-certificates%40721ff6606b8c145755691d6cf87088ae7ff3d346",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ca-certificates-bundle-6c3da0d3987f3615",
+      "name": "ca-certificates-bundle",
+      "versionInfo": "20260413-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "(MPL-2.0 AND MIT)",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ca-certificates-bundle@20260413-r1?arch=aarch64\u0026origin=ca-certificates",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-ca-certificates-bundle",
+      "name": "ca-certificates-bundle",
+      "versionInfo": "20260413-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-glibc-2.43-locale-posix-2.43-r15",
+      "name": "glibc-2.43-locale-posix",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/glibc-2.43-locale-posix@2.43-r15?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:glibc:2.43:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-glibc-2.43.yaml-f5d4080e9faabf840cf3b5d634ba78c315f39ab5",
+      "name": "glibc-2.43.yaml",
+      "versionInfo": "f5d4080e9faabf840cf3b5d634ba78c315f39ab5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@f5d4080e9faabf840cf3b5d634ba78c315f39ab5#glibc-2.43.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-gitlab.com-gnutools-glibc.git-release-2.43-master-dae425b554207f7c4599c7fac707ad4c08545674-0",
+      "name": "gnutools/glibc",
+      "versionInfo": "dae425b554207f7c4599c7fac707ad4c08545674",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "downloadLocation": "https://tarballs.cgr.dev/g/9390037ac2ec26cf74ce7c6709d852e0ce67205355e04fbdb9b9549f47a5bb40-dae425b554207f7c4599c7fac707ad4c08545674.tar.gz",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/gnutools%2Fglibc@dae425b554207f7c4599c7fac707ad4c08545674?vcs_url=git%2Bhttps:%2F%2Fgitlab.com%2Fgnutools%2Fglibc.git%40dae425b554207f7c4599c7fac707ad4c08545674",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-glibc-2.43-locale-posix-006937592042c261",
+      "name": "glibc-2.43-locale-posix",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "description": "POSIX locale data for glibc",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:glibc:2.43-r15:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/glibc-2.43-locale-posix@2.43-r15?arch=aarch64\u0026origin=glibc-2.43",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-glibc-2.43-locale-posix",
+      "name": "glibc-2.43-locale-posix",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libgcc-16.2.0-r0",
+      "name": "libgcc",
+      "versionInfo": "16.2.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-or-later WITH GCC-exception-3.1",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libgcc@16.2.0-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-gcc.yaml-51753bba53f83f97725b8e9bfb19caefaaabc65a",
+      "name": "gcc.yaml",
+      "versionInfo": "51753bba53f83f97725b8e9bfb19caefaaabc65a",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@51753bba53f83f97725b8e9bfb19caefaaabc65a#gcc.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-gitlab.com-gnutools-gcc.git-releases-gcc-16.2.0-78d4ac73dd391005b895a6148cd9831e28e1208b-0",
+      "name": "gnutools/gcc",
+      "versionInfo": "releases/gcc-16.2.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-or-later WITH GCC-exception-3.1",
+      "downloadLocation": "https://tarballs.cgr.dev/g/dc3e72361e36d33e861a0662815d63a4f1b8578521cc6935343a4aa87327bdec-78d4ac73dd391005b895a6148cd9831e28e1208b.tar.gz",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/gnutools%2Fgcc@releases%2Fgcc-16.2.0?vcs_url=git%2Bhttps:%2F%2Fgitlab.com%2Fgnutools%2Fgcc.git%4078d4ac73dd391005b895a6148cd9831e28e1208b",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libgcc-50a1296a958eb8d2",
+      "name": "libgcc",
+      "versionInfo": "16.2.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "(GPL-3.0-or-later WITH GCC-exception-3.1)",
+      "description": "GCC runtime library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:gcc:16.2.0:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libgcc@16.2.0-r0?arch=aarch64\u0026origin=gcc",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libgcc",
+      "name": "libgcc",
+      "versionInfo": "16.2.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-glibc-2.43-2.43-r15",
+      "name": "glibc-2.43",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/glibc-2.43@2.43-r15?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:glibc:2.43:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-glibc-2.43-27b0046928034e47",
+      "name": "glibc-2.43",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "description": "the GNU C library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:glibc:2.43-r15:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/glibc-2.43@2.43-r15?arch=aarch64\u0026origin=glibc-2.43",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-glibc-2.43",
+      "name": "glibc-2.43",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ld-linux-2.43-2.43-r15",
+      "name": "ld-linux-2.43",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ld-linux-2.43@2.43-r15?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:glibc:2.43:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ld-linux-2.43-c46d9bccd0525541",
+      "name": "ld-linux-2.43",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "description": "the GLIBC ELF interpreter",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:glibc:2.43-r15:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ld-linux-2.43@2.43-r15?arch=aarch64\u0026origin=glibc-2.43",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-ld-linux-2.43",
+      "name": "ld-linux-2.43",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libcrypto3-3.6.4-r0",
+      "name": "libcrypto3",
+      "versionInfo": "3.6.4-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libcrypto3@3.6.4-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-openssl.yaml-0c56fd2f294316ce2330ec14f3a845ca91c40530",
+      "name": "openssl.yaml",
+      "versionInfo": "0c56fd2f294316ce2330ec14f3a845ca91c40530",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@0c56fd2f294316ce2330ec14f3a845ca91c40530#openssl.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-openssl-openssl-openssl-3.6.4-d3c1b1169b3569ff3069e5b399f47b2b28e03d79-0",
+      "name": "openssl",
+      "versionInfo": "openssl-3.6.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "https://github.com/openssl/openssl/archive/d3c1b1169b3569ff3069e5b399f47b2b28e03d79.tar.gz",
+      "originator": "Organization: Openssl",
+      "supplier": "Organization: Openssl",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/openssl/openssl@openssl-3.6.4",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libcrypto3-67cecf5da8294223",
+      "name": "libcrypto3",
+      "versionInfo": "3.6.4-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "description": "OpenSSL libcrypto library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libcrypto3@3.6.4-r0?arch=aarch64\u0026origin=openssl",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libcrypto3",
+      "name": "libcrypto3",
+      "versionInfo": "3.6.4-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-gdbm-1.26-r5",
+      "name": "gdbm",
+      "versionInfo": "1.26-r5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/gdbm@1.26-r5?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-gdbm.yaml-74465ff25399be9a58446991d3c4f364c30df9f3",
+      "name": "gdbm.yaml",
+      "versionInfo": "74465ff25399be9a58446991d3c4f364c30df9f3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@74465ff25399be9a58446991d3c4f364c30df9f3#gdbm.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-git.savannah.gnu.org-git-gdbm.git-v1.26-8ca8f03ab6cc125139a395ec2d522aebb15f8060-0",
+      "name": "git/gdbm",
+      "versionInfo": "v1.26",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "downloadLocation": "https://tarballs.cgr.dev/g/42740bd9e1a78209c3c68f439ab4397c34f0ed77c165a024d710bdd48e76d1df-8ca8f03ab6cc125139a395ec2d522aebb15f8060.tar.gz",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/git%2Fgdbm@v1.26?vcs_url=git%2Bhttps:%2F%2Fgit.savannah.gnu.org%2Fgit%2Fgdbm.git%408ca8f03ab6cc125139a395ec2d522aebb15f8060",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-gdbm-502ac51c75f22f96",
+      "name": "gdbm",
+      "versionInfo": "1.26-r5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "description": "GNU dbm is a set of database routines which use extensible hashing",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gdbm:gdbm:1.26-r5:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/gdbm@1.26-r5?arch=aarch64\u0026origin=gdbm",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-gdbm",
+      "name": "gdbm",
+      "versionInfo": "1.26-r5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libxcrypt-4.5.2-r4",
+      "name": "libxcrypt",
+      "versionInfo": "4.5.2-r4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libxcrypt@4.5.2-r4?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-libxcrypt.yaml-f76d3f4a8c71191bd83630f6067bd5768445d4b9",
+      "name": "libxcrypt.yaml",
+      "versionInfo": "f76d3f4a8c71191bd83630f6067bd5768445d4b9",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@f76d3f4a8c71191bd83630f6067bd5768445d4b9#libxcrypt.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-besser82-libxcrypt-v4.5.2-db70b42bd7b2a5b00a8580c8dec0aa66791c950a-0",
+      "name": "libxcrypt",
+      "versionInfo": "v4.5.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+      "downloadLocation": "https://github.com/besser82/libxcrypt/archive/db70b42bd7b2a5b00a8580c8dec0aa66791c950a.tar.gz",
+      "originator": "Organization: Besser82",
+      "supplier": "Organization: Besser82",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/besser82/libxcrypt@v4.5.2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libxcrypt-1cd0ddeda6223908",
+      "name": "libxcrypt",
+      "versionInfo": "4.5.2-r4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "(GPL-2.0-or-later AND LGPL-2.1-or-later)",
+      "description": "Modern library for one-way hashing of passwords",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libxcrypt@4.5.2-r4?arch=aarch64\u0026origin=libxcrypt",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libxcrypt",
+      "name": "libxcrypt",
+      "versionInfo": "4.5.2-r4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libcrypt1-2.43-2.43-r15",
+      "name": "libcrypt1-2.43",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libcrypt1-2.43@2.43-r15?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:glibc:2.43:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libcrypt1-2.43-d423d3120f6a5652",
+      "name": "libcrypt1-2.43",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LGPL-2.1-or-later",
+      "description": "Password hashing library included with glibc",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:glibc:2.43-r15:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libcrypt1-2.43@2.43-r15?arch=aarch64\u0026origin=glibc-2.43",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libcrypt1-2.43",
+      "name": "libcrypt1-2.43",
+      "versionInfo": "2.43-r15",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ncurses-terminfo-base-6.6.20260822-r0",
+      "name": "ncurses-terminfo-base",
+      "versionInfo": "6.6.20260822-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ncurses-terminfo-base@6.6.20260822-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-ncurses.yaml-7f5a3b0d7bb2431dbed48d246760a72d0eb1c2c8",
+      "name": "ncurses.yaml",
+      "versionInfo": "7f5a3b0d7bb2431dbed48d246760a72d0eb1c2c8",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@7f5a3b0d7bb2431dbed48d246760a72d0eb1c2c8#ncurses.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-ThomasDickey-ncurses-snapshots-v6C956C9520260822-b86de61d59272137acf1b14dd7fadfa5eeaab4ee-0",
+      "name": "ncurses-snapshots",
+      "versionInfo": "v6_6_20260822",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/ThomasDickey/ncurses-snapshots/archive/b86de61d59272137acf1b14dd7fadfa5eeaab4ee.tar.gz",
+      "originator": "Organization: Thomasdickey",
+      "supplier": "Organization: Thomasdickey",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/thomasdickey/ncurses-snapshots@v6_6_20260822",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ncurses-terminfo-base-c1d1b9af7cd64e72",
+      "name": "ncurses-terminfo-base",
+      "versionInfo": "6.6.20260822-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "descriptions of common terminals",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:ncurses:6.6.20260822:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ncurses-terminfo-base@6.6.20260822-r0?arch=aarch64\u0026origin=ncurses",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-ncurses-terminfo-base",
+      "name": "ncurses-terminfo-base",
+      "versionInfo": "6.6.20260822-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ncurses-6.6.20260822-r0",
+      "name": "ncurses",
+      "versionInfo": "6.6.20260822-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ncurses@6.6.20260822-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ncurses-e9dfb15390facd4d",
+      "name": "ncurses",
+      "versionInfo": "6.6.20260822-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "console display library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:gnu:ncurses:6.6.20260822:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ncurses@6.6.20260822-r0?arch=aarch64\u0026origin=ncurses",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-ncurses",
+      "name": "ncurses",
+      "versionInfo": "6.6.20260822-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-readline-8.3-r2",
+      "name": "readline",
+      "versionInfo": "8.3-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/readline@8.3-r2?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-readline.yaml-e402be2d67f6e4ed597bbaca3f84cc9215071ff5",
+      "name": "readline.yaml",
+      "versionInfo": "e402be2d67f6e4ed597bbaca3f84cc9215071ff5",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@e402be2d67f6e4ed597bbaca3f84cc9215071ff5#readline.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-git.savannah.gnu.org-git-readline.git-readline-8.3-447b8290b3e2e2d117dc8e9cdb83b0dc6448a638-0",
+      "name": "git/readline",
+      "versionInfo": "readline-8.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "downloadLocation": "https://tarballs.cgr.dev/g/ca1544b7a4361c29393002e6b6d7b40cf760179801b69a5c375d2d2ed53e109a-447b8290b3e2e2d117dc8e9cdb83b0dc6448a638.tar.gz",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/git%2Freadline@readline-8.3?vcs_url=git%2Bhttps:%2F%2Fgit.savannah.gnu.org%2Fgit%2Freadline.git%40447b8290b3e2e2d117dc8e9cdb83b0dc6448a638",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-readline-26c0a8529531191c",
+      "name": "readline",
+      "versionInfo": "8.3-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-3.0-or-later",
+      "description": "GNU readline library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:readline:readline:8.3-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/readline@8.3-r2?arch=aarch64\u0026origin=readline",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-readline",
+      "name": "readline",
+      "versionInfo": "8.3-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-sqlite-libs-3.53.4-r0",
+      "name": "sqlite-libs",
+      "versionInfo": "3.53.4-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "blessing",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/sqlite-libs@3.53.4-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-sqlite.yaml-844ca914d9a57afd75d3fed20edfbe8bb629a962",
+      "name": "sqlite.yaml",
+      "versionInfo": "844ca914d9a57afd75d3fed20edfbe8bb629a962",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@844ca914d9a57afd75d3fed20edfbe8bb629a962#sqlite.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-sqlite-3.53.4-0",
+      "name": "sqlite",
+      "versionInfo": "3.53.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "https://www.sqlite.org/2026/sqlite-src-3530400.zip",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d18fa15aec74d8c17e1463f861095adc01b5ad190256acb4f91d22f0368d232b"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/sqlite@3.53.4?checksum=sha256:d18fa15aec74d8c17e1463f861095adc01b5ad190256acb4f91d22f0368d232b\u0026download_url=https:%2F%2Fwww.sqlite.org%2F2026%2Fsqlite-src-3530400.zip",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-sqlite-libs-9d9aa13debff5413",
+      "name": "sqlite-libs",
+      "versionInfo": "3.53.4-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "blessing",
+      "description": "sqlite library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/sqlite-libs@3.53.4-r0?arch=aarch64\u0026origin=sqlite",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-sqlite-libs",
+      "name": "sqlite-libs",
+      "versionInfo": "3.53.4-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-heimdal-libs-7.8.0-r51",
+      "name": "heimdal-libs",
+      "versionInfo": "7.8.0-r51",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/heimdal-libs@7.8.0-r51?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-heimdal.yaml-1788db950fbaabecb02eda3b5336e24a265be27a",
+      "name": "heimdal.yaml",
+      "versionInfo": "1788db950fbaabecb02eda3b5336e24a265be27a",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@1788db950fbaabecb02eda3b5336e24a265be27a#heimdal.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-heimdal-heimdal-heimdal-7.8.0-a6cf94577c0d1e5bca5304342e4ddffb18255afe-0",
+      "name": "heimdal",
+      "versionInfo": "heimdal-7.8.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "https://github.com/heimdal/heimdal/archive/a6cf94577c0d1e5bca5304342e4ddffb18255afe.tar.gz",
+      "originator": "Organization: Heimdal",
+      "supplier": "Organization: Heimdal",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/heimdal/heimdal@heimdal-7.8.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-heimdal-libs-b96aea44ac3e0317",
+      "name": "heimdal-libs",
+      "versionInfo": "7.8.0-r51",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "description": "libraries shipped by heimdal",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/heimdal-libs@7.8.0-r51?arch=aarch64\u0026origin=heimdal",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-heimdal-libs",
+      "name": "heimdal-libs",
+      "versionInfo": "7.8.0-r51",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-cyrus-sasl-heimdal-libs-2.1.28-r54",
+      "name": "cyrus-sasl-heimdal-libs",
+      "versionInfo": "2.1.28-r54",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/cyrus-sasl-heimdal-libs@2.1.28-r54?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-cyrus-sasl-heimdal.yaml-3b4adc6819f05a74f230e0a38a5c65b4e21db60c",
+      "name": "cyrus-sasl-heimdal.yaml",
+      "versionInfo": "3b4adc6819f05a74f230e0a38a5c65b4e21db60c",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@3b4adc6819f05a74f230e0a38a5c65b4e21db60c#cyrus-sasl-heimdal.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-cyrusimap-cyrus-sasl.git-cyrus-sasl-2.1.28-7a6b45b177070198fed0682bea5fa87c18abb084-0",
+      "name": "cyrus-sasl",
+      "versionInfo": "cyrus-sasl-2.1.28",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "https://github.com/cyrusimap/cyrus-sasl/archive/7a6b45b177070198fed0682bea5fa87c18abb084.tar.gz",
+      "originator": "Organization: Cyrusimap",
+      "supplier": "Organization: Cyrusimap",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/cyrusimap/cyrus-sasl@cyrus-sasl-2.1.28",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-cyrus-sasl-heimdal-libs-f788b1c3cea191c0",
+      "name": "cyrus-sasl-heimdal-libs",
+      "versionInfo": "2.1.28-r54",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "description": "Shared libraries for cyrus-sasl-heimdal",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/cyrus-sasl-heimdal-libs@2.1.28-r54?arch=aarch64\u0026origin=cyrus-sasl-heimdal",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-cyrus-sasl-heimdal-libs",
+      "name": "cyrus-sasl-heimdal-libs",
+      "versionInfo": "2.1.28-r54",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libbrotlicommon1-1.2.0-r3",
+      "name": "libbrotlicommon1",
+      "versionInfo": "1.2.0-r3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libbrotlicommon1@1.2.0-r3?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-brotli.yaml-805df43a1d8bc2ce041ef9f1133fd003fa8a0a10",
+      "name": "brotli.yaml",
+      "versionInfo": "805df43a1d8bc2ce041ef9f1133fd003fa8a0a10",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@805df43a1d8bc2ce041ef9f1133fd003fa8a0a10#brotli.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-google-brotli.git-v1.2.0-028fb5a23661f123017c060daa546b55cf4bde29-0",
+      "name": "brotli",
+      "versionInfo": "v1.2.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/google/brotli/archive/028fb5a23661f123017c060daa546b55cf4bde29.tar.gz",
+      "originator": "Organization: Google",
+      "supplier": "Organization: Google",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/google/brotli@v1.2.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libbrotlicommon1-e5e1345cd807dce4",
+      "name": "libbrotlicommon1",
+      "versionInfo": "1.2.0-r3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libbrotlicommon1:libbrotlicommon1:1.2.0-r3:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libbrotlicommon1:libbrotlicommon:1.2.0-r3:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libbrotlicommon:libbrotlicommon1:1.2.0-r3:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libbrotlicommon:libbrotlicommon:1.2.0-r3:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libbrotlicommon1@1.2.0-r3?arch=aarch64\u0026origin=brotli",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libbrotlicommon1",
+      "name": "libbrotlicommon1",
+      "versionInfo": "1.2.0-r3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libbrotlidec1-1.2.0-r3",
+      "name": "libbrotlidec1",
+      "versionInfo": "1.2.0-r3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libbrotlidec1@1.2.0-r3?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libbrotlidec1-a0bc9810507978d0",
+      "name": "libbrotlidec1",
+      "versionInfo": "1.2.0-r3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libbrotlidec1:libbrotlidec1:1.2.0-r3:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libbrotlidec1:libbrotlidec:1.2.0-r3:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libbrotlidec:libbrotlidec1:1.2.0-r3:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libbrotlidec:libbrotlidec:1.2.0-r3:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libbrotlidec1@1.2.0-r3?arch=aarch64\u0026origin=brotli",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libbrotlidec1",
+      "name": "libbrotlidec1",
+      "versionInfo": "1.2.0-r3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-krb5-conf-1.0-r9",
+      "name": "krb5-conf",
+      "versionInfo": "1.0-r9",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/krb5-conf@1.0-r9?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-krb5-conf.yaml-bb37bc90f076f9eb2a12980e43c3f12673133835",
+      "name": "krb5-conf.yaml",
+      "versionInfo": "bb37bc90f076f9eb2a12980e43c3f12673133835",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@bb37bc90f076f9eb2a12980e43c3f12673133835#krb5-conf.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-krb5-conf-255943af5e457d13",
+      "name": "krb5-conf",
+      "versionInfo": "1.0-r9",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "Shared krb5.conf for both MIT krb5 and heimdal",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5-conf:krb5-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5-conf:krb5_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5_conf:krb5-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5_conf:krb5_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb-conf:krb5-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb-conf:krb5_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5-conf:krb-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5-conf:krb_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5_conf:krb-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5_conf:krb_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb_conf:krb5-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb_conf:krb5_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb-conf:krb-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb-conf:krb_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb_conf:krb-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb_conf:krb_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5:krb5-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5:krb5_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5:krb-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5:krb_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb:krb5-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb:krb5_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb:krb-conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb:krb_conf:1.0-r9:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/krb5-conf@1.0-r9?arch=aarch64\u0026origin=krb5-conf",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-krb5-conf",
+      "name": "krb5-conf",
+      "versionInfo": "1.0-r9",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libcomC95err-1.47.4-r1",
+      "name": "libcom_err",
+      "versionInfo": "1.47.4-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libcom_err@1.47.4-r1?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-e2fsprogs.yaml-4cdc0f257ba04f4476c5323e52f0f389e68e534a",
+      "name": "e2fsprogs.yaml",
+      "versionInfo": "4cdc0f257ba04f4476c5323e52f0f389e68e534a",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@4cdc0f257ba04f4476c5323e52f0f389e68e534a#e2fsprogs.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-tytso-e2fsprogs-v1.47.4-7ee1d505ef3b37831215f490411f346fe57e9053-0",
+      "name": "e2fsprogs",
+      "versionInfo": "v1.47.4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT",
+      "downloadLocation": "https://github.com/tytso/e2fsprogs/archive/7ee1d505ef3b37831215f490411f346fe57e9053.tar.gz",
+      "originator": "Organization: Tytso",
+      "supplier": "Organization: Tytso",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/tytso/e2fsprogs@v1.47.4",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libcom-err-173718fdc3ef6cd8",
+      "name": "libcom_err",
+      "versionInfo": "1.47.4-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "(GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT)",
+      "description": "Common error description library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libcom-err:libcom-err:1.47.4-r1:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libcom-err:libcom_err:1.47.4-r1:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libcom_err:libcom-err:1.47.4-r1:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libcom_err:libcom_err:1.47.4-r1:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libcom:libcom-err:1.47.4-r1:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libcom:libcom_err:1.47.4-r1:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libcom_err@1.47.4-r1?arch=aarch64\u0026origin=e2fsprogs",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libcom-err",
+      "name": "libcom_err",
+      "versionInfo": "1.47.4-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-keyutils-libs-1.6.3-r39",
+      "name": "keyutils-libs",
+      "versionInfo": "1.6.3-r39",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPL-2.0-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/keyutils-libs@1.6.3-r39?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-keyutils.yaml-c039504cb9226463ea6c7e1b81484e8480208722",
+      "name": "keyutils.yaml",
+      "versionInfo": "c039504cb9226463ea6c7e1b81484e8480208722",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@c039504cb9226463ea6c7e1b81484e8480208722#keyutils.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-kernel.googlesource.com-pub-scm-linux-kernel-git-dhowells-keyutils.git-v1.6.3-cb3bb194cca88211cbfcdde2f10c0f43c3fb8ec3-0",
+      "name": "pub/scm/linux/kernel/git/dhowells/keyutils",
+      "versionInfo": "v1.6.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPL-2.0-or-later",
+      "downloadLocation": "https://tarballs.cgr.dev/p/c4263df0120f9cbea0297c9b6574d5bafd566f98b9cec2e39be1c0e378836781-cb3bb194cca88211cbfcdde2f10c0f43c3fb8ec3.tar.gz",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/pub%2Fscm%2Flinux%2Fkernel%2Fgit%2Fdhowells%2Fkeyutils@v1.6.3?vcs_url=git%2Bhttps:%2F%2Fkernel.googlesource.com%2Fpub%2Fscm%2Flinux%2Fkernel%2Fgit%2Fdhowells%2Fkeyutils.git%40cb3bb194cca88211cbfcdde2f10c0f43c3fb8ec3",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-keyutils-libs-cb2d9034bb8b4b70",
+      "name": "keyutils-libs",
+      "versionInfo": "1.6.3-r39",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "(GPL-2.0-or-later OR LGPL-2.0-or-later)",
+      "description": "keyutils library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/keyutils-libs@1.6.3-r39?arch=aarch64\u0026origin=keyutils",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-keyutils-libs",
+      "name": "keyutils-libs",
+      "versionInfo": "1.6.3-r39",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libssl3-3.6.4-r0",
+      "name": "libssl3",
+      "versionInfo": "3.6.4-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libssl3@3.6.4-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libssl3-c5e7878517e2b700",
+      "name": "libssl3",
+      "versionInfo": "3.6.4-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "description": "OpenSSL libssl library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libssl3@3.6.4-r0?arch=aarch64\u0026origin=openssl",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libssl3",
+      "name": "libssl3",
+      "versionInfo": "3.6.4-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libverto-0.3.2-r7",
+      "name": "libverto",
+      "versionInfo": "0.3.2-r7",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libverto@0.3.2-r7?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-libverto.yaml-79c7eda43fae1c44ddd378bb021e59175624ad6e",
+      "name": "libverto.yaml",
+      "versionInfo": "79c7eda43fae1c44ddd378bb021e59175624ad6e",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@79c7eda43fae1c44ddd378bb021e59175624ad6e#libverto.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-latchset-libverto-0.3.2-1e8f574f702f270d96e42348e7cc088da5acc9ae-0",
+      "name": "libverto",
+      "versionInfo": "0.3.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/latchset/libverto/archive/1e8f574f702f270d96e42348e7cc088da5acc9ae.tar.gz",
+      "originator": "Organization: Latchset",
+      "supplier": "Organization: Latchset",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/latchset/libverto@0.3.2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libverto-11e163509dfdcbe2",
+      "name": "libverto",
+      "versionInfo": "0.3.2-r7",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "Main loop abstraction library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libverto:libverto:0.3.2-r7:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libverto@0.3.2-r7?arch=aarch64\u0026origin=libverto",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libverto",
+      "name": "libverto",
+      "versionInfo": "0.3.2-r7",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-krb5-libs-1.22.2-r2",
+      "name": "krb5-libs",
+      "versionInfo": "1.22.2-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/krb5-libs@1.22.2-r2?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-krb5.yaml-63a99011b1face0d36060eb2d4cffaf97630a578",
+      "name": "krb5.yaml",
+      "versionInfo": "63a99011b1face0d36060eb2d4cffaf97630a578",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@63a99011b1face0d36060eb2d4cffaf97630a578#krb5.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-krb5-krb5.git-krb5-1.22.2-final-8570e77819563e036027e1da789d08ec9333ed4d-0",
+      "name": "krb5",
+      "versionInfo": "krb5-1.22.2-final",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/krb5/krb5/archive/8570e77819563e036027e1da789d08ec9333ed4d.tar.gz",
+      "originator": "Organization: Krb5",
+      "supplier": "Organization: Krb5",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/krb5/krb5@krb5-1.22.2-final",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-krb5-libs-4fc06df3a9014f46",
+      "name": "krb5-libs",
+      "versionInfo": "1.22.2-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "The shared libraries used by Kerberos 5",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5-libs:krb5-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5-libs:krb5_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5_libs:krb5-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5_libs:krb5_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb-libs:krb5-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb-libs:krb5_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5-libs:krb-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5-libs:krb_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5_libs:krb-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5_libs:krb_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb_libs:krb5-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb_libs:krb5_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb-libs:krb-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb-libs:krb_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb_libs:krb-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb_libs:krb_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5:krb5-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5:krb5_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5:krb-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb5:krb_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb:krb5-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb:krb5_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb:krb-libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:krb:krb_libs:1.22.2-r2:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/krb5-libs@1.22.2-r2?arch=aarch64\u0026origin=krb5",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-krb5-libs",
+      "name": "krb5-libs",
+      "versionInfo": "1.22.2-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libunistring-1.4.2-r2",
+      "name": "libunistring",
+      "versionInfo": "1.4.2-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libunistring@1.4.2-r2?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-libunistring.yaml-44bcd0af195f786e83f248bcef66933277c1d6c9",
+      "name": "libunistring.yaml",
+      "versionInfo": "44bcd0af195f786e83f248bcef66933277c1d6c9",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@44bcd0af195f786e83f248bcef66933277c1d6c9#libunistring.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-https.git.savannah.gnu.org-git-libunistring.git-v1.4.2-7dee51196310a703972a94843ecaf92decce6f82-0",
+      "name": "git/libunistring",
+      "versionInfo": "v1.4.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+      "downloadLocation": "https://tarballs.cgr.dev/g/8647b56477282eff9978402011260dd5cf99ea235db78088a35a84c76d6356c8-7dee51196310a703972a94843ecaf92decce6f82.tar.gz",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/git%2Flibunistring@v1.4.2?vcs_url=git%2Bhttps:%2F%2Fhttps.git.savannah.gnu.org%2Fgit%2Flibunistring.git%407dee51196310a703972a94843ecaf92decce6f82",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libunistring-6c43e38033cd8029",
+      "name": "libunistring",
+      "versionInfo": "1.4.2-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "(GPL-2.0-or-later OR LGPL-3.0-or-later)",
+      "description": "Library for manipulating Unicode strings and C strings",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libunistring@1.4.2-r2?arch=aarch64\u0026origin=libunistring",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libunistring",
+      "name": "libunistring",
+      "versionInfo": "1.4.2-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libidn2-2.3.8-r8",
+      "name": "libidn2",
+      "versionInfo": "2.3.8-r8",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPL-3.0-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libidn2@2.3.8-r8?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-libidn2.yaml-595a540b3af03caf88af1e6260b49cf9c71f5a58",
+      "name": "libidn2.yaml",
+      "versionInfo": "595a540b3af03caf88af1e6260b49cf9c71f5a58",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@595a540b3af03caf88af1e6260b49cf9c71f5a58#libidn2.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-gitlab.com-libidn-libidn2-v2.3.8-9bc3ac79e2ae81ade245a0e308bf13c981efaa83-0",
+      "name": "libidn/libidn2",
+      "versionInfo": "v2.3.8",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later AND LGPL-3.0-or-later",
+      "downloadLocation": "https://tarballs.cgr.dev/l/647ec517d7d5a099d6182bc708cd871327e049f96c961ab62ae2acea4398bf29-9bc3ac79e2ae81ade245a0e308bf13c981efaa83.tar.gz",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/libidn%2Flibidn2@v2.3.8?vcs_url=git%2Bhttps:%2F%2Fgitlab.com%2Flibidn%2Flibidn2%409bc3ac79e2ae81ade245a0e308bf13c981efaa83",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libidn2-04d4bd49032c04b9",
+      "name": "libidn2",
+      "versionInfo": "2.3.8-r8",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "(GPL-2.0-or-later AND LGPL-3.0-or-later)",
+      "description": "Encode/Decode library for internationalized domain names",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libidn2@2.3.8-r8?arch=aarch64\u0026origin=libidn2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libidn2",
+      "name": "libidn2",
+      "versionInfo": "2.3.8-r8",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libldap-2.7-2.7.0-r0",
+      "name": "libldap-2.7",
+      "versionInfo": "2.7.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "OLDAP-2.8",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libldap-2.7@2.7.0-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-openldap-2.7.yaml-99228f4d96e21e906de4cc861336c3d5a6223bdb",
+      "name": "openldap-2.7.yaml",
+      "versionInfo": "99228f4d96e21e906de4cc861336c3d5a6223bdb",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@99228f4d96e21e906de4cc861336c3d5a6223bdb#openldap-2.7.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-openldap-openldap.git-OPENLDAPC95RELC95ENGC952C957C950-cbc3211e0f9c01e4fbf5c795ccdffd57d9ce660b-0",
+      "name": "openldap",
+      "versionInfo": "OPENLDAP_REL_ENG_2_7_0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "OLDAP-2.8",
+      "downloadLocation": "https://github.com/openldap/openldap/archive/cbc3211e0f9c01e4fbf5c795ccdffd57d9ce660b.tar.gz",
+      "originator": "Organization: Openldap",
+      "supplier": "Organization: Openldap",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/openldap/openldap@OPENLDAP_REL_ENG_2_7_0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libldap-2.7-781b69d4dcbb0d02",
+      "name": "libldap-2.7",
+      "versionInfo": "2.7.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "OLDAP-2.8",
+      "description": "OpenLDAP libraries",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libldap-2.7@2.7.0-r0?arch=aarch64\u0026origin=openldap-2.7",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libldap-2.7",
+      "name": "libldap-2.7",
+      "versionInfo": "2.7.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libnghttp2-14-1.70.0-r2",
+      "name": "libnghttp2-14",
+      "versionInfo": "1.70.0-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libnghttp2-14@1.70.0-r2?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-nghttp2.yaml-0f75043dd5e2102707470616302978a67908b9a9",
+      "name": "nghttp2.yaml",
+      "versionInfo": "0f75043dd5e2102707470616302978a67908b9a9",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@0f75043dd5e2102707470616302978a67908b9a9#nghttp2.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-nghttp2-nghttp2.git-v1.70.0-85e300c79fb6dbcfa9c1013215c8710c1c2cd3d2-0",
+      "name": "nghttp2",
+      "versionInfo": "v1.70.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/nghttp2/nghttp2/archive/85e300c79fb6dbcfa9c1013215c8710c1c2cd3d2.tar.gz",
+      "originator": "Organization: Nghttp2",
+      "supplier": "Organization: Nghttp2",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/nghttp2/nghttp2@v1.70.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libnghttp2-14-e731cda7d80fd74d",
+      "name": "libnghttp2-14",
+      "versionInfo": "1.70.0-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "nghttp2 client library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libnghttp2-14@1.70.0-r2?arch=aarch64\u0026origin=nghttp2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libnghttp2-14",
+      "name": "libnghttp2-14",
+      "versionInfo": "1.70.0-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-nghttp3-1.18.0-r0",
+      "name": "nghttp3",
+      "versionInfo": "1.18.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/nghttp3@1.18.0-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-nghttp3.yaml-dd1909716244bf3f0249d70a7d38d74b0c9d80d4",
+      "name": "nghttp3.yaml",
+      "versionInfo": "dd1909716244bf3f0249d70a7d38d74b0c9d80d4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@dd1909716244bf3f0249d70a7d38d74b0c9d80d4#nghttp3.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-ngtcp2-nghttp3.git-v1.18.0-dbfc24286138cb0b6490160e7ca87fe1ce6722a0-0",
+      "name": "nghttp3",
+      "versionInfo": "v1.18.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/ngtcp2/nghttp3/archive/dbfc24286138cb0b6490160e7ca87fe1ce6722a0.tar.gz",
+      "originator": "Organization: Ngtcp2",
+      "supplier": "Organization: Ngtcp2",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/ngtcp2/nghttp3@v1.18.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-nghttp3-1e42d6a89ac1ac9c",
+      "name": "nghttp3",
+      "versionInfo": "1.18.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "HTTP/3 library written in C",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/nghttp3@1.18.0-r0?arch=aarch64\u0026origin=nghttp3",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-nghttp3",
+      "name": "nghttp3",
+      "versionInfo": "1.18.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ngtcp2-1.25.0-r1",
+      "name": "ngtcp2",
+      "versionInfo": "1.25.0-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ngtcp2@1.25.0-r1?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-ngtcp2.yaml-bc7281ed42082b787ebe1bdbb5805b377f6ccb4b",
+      "name": "ngtcp2.yaml",
+      "versionInfo": "bc7281ed42082b787ebe1bdbb5805b377f6ccb4b",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@bc7281ed42082b787ebe1bdbb5805b377f6ccb4b#ngtcp2.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-ngtcp2-ngtcp2.git-v1.25.0-f9e9ff01ad2c8116bc09de4f644b0028a61486a6-0",
+      "name": "ngtcp2",
+      "versionInfo": "v1.25.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/ngtcp2/ngtcp2/archive/f9e9ff01ad2c8116bc09de4f644b0028a61486a6.tar.gz",
+      "originator": "Organization: Ngtcp2",
+      "supplier": "Organization: Ngtcp2",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/ngtcp2/ngtcp2@v1.25.0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-ngtcp2-12e525e85e80eaed",
+      "name": "ngtcp2",
+      "versionInfo": "1.25.0-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "ngtcp2 project is an effort to implement IETF QUIC protocol",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/ngtcp2@1.25.0-r1?arch=aarch64\u0026origin=ngtcp2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-ngtcp2",
+      "name": "ngtcp2",
+      "versionInfo": "1.25.0-r1",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libpsl-0.23.3-r0",
+      "name": "libpsl",
+      "versionInfo": "0.23.3-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libpsl@0.23.3-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-libpsl.yaml-ef283b0ab2e85b3f4945289fd0aedf0b9cb6ffec",
+      "name": "libpsl.yaml",
+      "versionInfo": "ef283b0ab2e85b3f4945289fd0aedf0b9cb6ffec",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@ef283b0ab2e85b3f4945289fd0aedf0b9cb6ffec#libpsl.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-rockdaboot-libpsl.git-0.23.3-c486db8d221cbac55f87508d4da4db4497760997-0",
+      "name": "libpsl",
+      "versionInfo": "0.23.3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/rockdaboot/libpsl/archive/c486db8d221cbac55f87508d4da4db4497760997.tar.gz",
+      "originator": "Organization: Rockdaboot",
+      "supplier": "Organization: Rockdaboot",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/rockdaboot/libpsl@0.23.3",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libpsl-f34f70426a16da6f",
+      "name": "libpsl",
+      "versionInfo": "0.23.3-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "C library for the Publix Suffix List",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libpsl@0.23.3-r0?arch=aarch64\u0026origin=libpsl",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libpsl",
+      "name": "libpsl",
+      "versionInfo": "0.23.3-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-zlib-1.3.2-r4",
+      "name": "zlib",
+      "versionInfo": "1.3.2-r4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MPL-2.0 AND MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/zlib@1.3.2-r4?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-zlib.yaml-a27721c97b2bffc54141307e511a494d464d5459",
+      "name": "zlib.yaml",
+      "versionInfo": "a27721c97b2bffc54141307e511a494d464d5459",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@a27721c97b2bffc54141307e511a494d464d5459#zlib.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-madler-zlib.git-v1.3.2-da607da739fa6047df13e66a2af6b8bec7c2a498-0",
+      "name": "zlib",
+      "versionInfo": "v1.3.2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MPL-2.0 AND MIT",
+      "downloadLocation": "https://github.com/madler/zlib/archive/da607da739fa6047df13e66a2af6b8bec7c2a498.tar.gz",
+      "originator": "Organization: Madler",
+      "supplier": "Organization: Madler",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/madler/zlib@v1.3.2",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-zlib-843cff951d1b36dd",
+      "name": "zlib",
+      "versionInfo": "1.3.2-r4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "(MPL-2.0 AND MIT)",
+      "description": "a library implementing the zlib compression algorithms",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/zlib@1.3.2-r4?arch=aarch64\u0026origin=zlib",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-zlib",
+      "name": "zlib",
+      "versionInfo": "1.3.2-r4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libcurl-openssl4-8.21.0-r2",
+      "name": "libcurl-openssl4",
+      "versionInfo": "8.21.0-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libcurl-openssl4@8.21.0-r2?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-curl.yaml-d9151d6ec33f7f8eee21cf38c72d040a983c48ea",
+      "name": "curl.yaml",
+      "versionInfo": "d9151d6ec33f7f8eee21cf38c72d040a983c48ea",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@d9151d6ec33f7f8eee21cf38c72d040a983c48ea#curl.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-curl-curl.git-curl-8C9521C950-68720b4837284335b2d63cb358f8f6ce65f5bc55-0",
+      "name": "curl",
+      "versionInfo": "curl-8_21_0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/curl/curl/archive/68720b4837284335b2d63cb358f8f6ce65f5bc55.tar.gz",
+      "originator": "Organization: Curl",
+      "supplier": "Organization: Curl",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/curl/curl@curl-8_21_0",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libcurl-openssl4-bc78ba14a5deba14",
+      "name": "libcurl-openssl4",
+      "versionInfo": "8.21.0-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "curl library (openssl backend)",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:haxx:curl:8.21.0:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libcurl-openssl4@8.21.0-r2?arch=aarch64\u0026origin=curl",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libcurl-openssl4",
+      "name": "libcurl-openssl4",
+      "versionInfo": "8.21.0-r2",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libexpat1-2.8.3-r0",
+      "name": "libexpat1",
+      "versionInfo": "2.8.3-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libexpat1@2.8.3-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        },
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libexpat_project:libexpat:2.8.3:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-expat.yaml-82cb5e4b97103dd06a6ff290c2194be5027dcd5c",
+      "name": "expat.yaml",
+      "versionInfo": "82cb5e4b97103dd06a6ff290c2194be5027dcd5c",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@82cb5e4b97103dd06a6ff290c2194be5027dcd5c#expat.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-github.com-libexpat-libexpat-RC952C958C953-92810461043fce37e70079b37ab1f04490a8f039-0",
+      "name": "libexpat",
+      "versionInfo": "R_2_8_3",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "https://github.com/libexpat/libexpat/archive/92810461043fce37e70079b37ab1f04490a8f039.tar.gz",
+      "originator": "Organization: Libexpat",
+      "supplier": "Organization: Libexpat",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/libexpat/libexpat@R_2_8_3",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-libexpat1-d8e23f48c1f5919f",
+      "name": "libexpat1",
+      "versionInfo": "2.8.3-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "description": "libexpat shared library",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:libexpat_project:libexpat:2.8.3-r0:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libexpat1@2.8.3-r0?arch=aarch64\u0026origin=expat",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-libexpat1",
+      "name": "libexpat1",
+      "versionInfo": "2.8.3-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-libpcre2-8-0-10.47-r0",
+      "name": "libpcre2-8-0",
+      "versionInfo": "10.47-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/libpcre2-8-0@10.47-r0?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-pcre2.yaml-f32cf65408ccd2e4697e20716953decd6fc0ea1b",
+      "name": "pcre2.yaml",
+      "versionInfo": "f32cf65408ccd2e4697e20716953decd6fc0ea1b",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/wolfi-dev/os@f32cf65408ccd2e4697e20716953decd6fc0ea1b#pcre2.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-github.com-PCRE2Project-pcre2.git-pcre2-10.47-f454e231fe5006dd7ff8f4693fd2b8eb94333429-0",
+      "name": "pcre2",
+      "versionInfo": "pcre2-10.47",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause",
+      "downloadLocation": "https://github.com/PCRE2Project/pcre2/archive/f454e231fe5006dd7ff8f4693fd2b8eb94333429.tar.gz",
+      "originator": "Organization: Pcre2project",
+      "supplier": "Organization: Pcre2project",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/pcre2project/pcre2@pcre2-10.47",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-git-2.55.0-r4",
+      "name": "git",
+      "versionInfo": "2.55.0-r4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/git@2.55.0-r4?arch=aarch64\u0026distro=wolfi",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange-git.yaml-b9edbdf381f4f22ef5bb6e3a5123567b52dfe003",
+      "name": "git.yaml",
+      "versionInfo": "b9edbdf381f4f22ef5bb6e3a5123567b52dfe003",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "Apache-2.0",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/chainguard-dev/stereo@b9edbdf381f4f22ef5bb6e3a5123567b52dfe003#git.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Source-kernel.googlesource.com-pub-scm-git-git.git-v2.55.0-e9019fcafe0040228b8631c30f97ae1adb61bcdc-0",
+      "name": "pub/scm/git/git",
+      "versionInfo": "v2.55.0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "downloadLocation": "https://tarballs.cgr.dev/p/13d95d86c3cf193d4f0417e059a08cc793fc772f803086b07d168643a0b50f40-e9019fcafe0040228b8631c30f97ae1adb61bcdc.tar.gz",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: Wolfi",
+      "primaryPackagePurpose": "SOURCE",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:generic/pub%2Fscm%2Fgit%2Fgit@v2.55.0?vcs_url=git%2Bhttps:%2F%2Fkernel.googlesource.com%2Fpub%2Fscm%2Fgit%2Fgit.git%40e9019fcafe0040228b8631c30f97ae1adb61bcdc",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-git-3fedd897d4475d75",
+      "name": "git",
+      "versionInfo": "2.55.0-r4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "GPL-2.0-or-later",
+      "description": "distributed version control system",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "sourceInfo": "acquired package info from APK DB: /.PKGINFO",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceLocator": "cpe:2.3:a:git-scm:git:2.55.0:*:*:*:*:*:*:*",
+          "referenceType": "cpe23Type"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/wolfi/git@2.55.0-r4?arch=aarch64\u0026origin=git",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-DocumentRoot-Directory-git",
+      "name": "git",
+      "versionInfo": "2.55.0-r4",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Wolfi",
+      "supplier": "Organization: chainguard",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "FILE"
+    },
+    {
+      "SPDXID": "SPDXRef-Package-apk-styrene-git-functional-0.1.0-r0",
+      "name": "styrene-git-functional",
+      "versionInfo": "0.1.0-r0",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Unknown",
+      "supplier": "Organization: Unknown",
+      "copyrightText": "NOASSERTION",
+      "primaryPackagePurpose": "APPLICATION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:apk/unknown/styrene-git-functional@0.1.0-r0?arch=aarch64",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-Melange--work-infra-packaging-styrene-git.melange.yaml-unknown",
+      "name": "/work/infra/packaging/styrene-git.melange.yaml",
+      "versionInfo": "unknown",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: Unknown",
+      "supplier": "Organization: Unknown",
+      "primaryPackagePurpose": "INSTALL",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/https:/%2Funknown%2Funknown%2Funknown@unknown#work/infra/packaging/styrene-git.melange.yaml",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-ImageLayer-sha256-0ca98c07370df09fc5d404532ee0558e8e28a53f89c444b6ffc755d25a3f04ea"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-wolfi-baselayout-20230201-r29",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-wolfi-baselayout.yaml-35e7b4713442869116936fae3fe8cf7c69bc9054"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-wolfi-baselayout",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-wolfi-baselayout-64d02eed92ca55e3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-wolfi-baselayout-20230201-r29",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-wolfi-baselayout"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-wolfi-baselayout-20230201-r29"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ca-certificates-bundle-20260413-r1",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-ca-certificates.yaml-70f58e72ab3f2139f773ba5c148b573e8d835baa"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ca-certificates-bundle-20260413-r1",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-gitlab.alpinelinux.org-alpine-ca-certificates-20260413-721ff6606b8c145755691d6cf87088ae7ff3d346-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-ca-certificates-bundle",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ca-certificates-bundle-6c3da0d3987f3615"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ca-certificates-bundle-20260413-r1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-ca-certificates-bundle"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ca-certificates-bundle-20260413-r1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-glibc-2.43-locale-posix-2.43-r15",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-glibc-2.43.yaml-f5d4080e9faabf840cf3b5d634ba78c315f39ab5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-glibc-2.43-locale-posix-2.43-r15",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-gitlab.com-gnutools-glibc.git-release-2.43-master-dae425b554207f7c4599c7fac707ad4c08545674-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-glibc-2.43-locale-posix",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-glibc-2.43-locale-posix-006937592042c261"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-glibc-2.43-locale-posix-2.43-r15",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-glibc-2.43-locale-posix"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-glibc-2.43-locale-posix-2.43-r15"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libgcc-16.2.0-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-gcc.yaml-51753bba53f83f97725b8e9bfb19caefaaabc65a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libgcc-16.2.0-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-gitlab.com-gnutools-gcc.git-releases-gcc-16.2.0-78d4ac73dd391005b895a6148cd9831e28e1208b-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libgcc",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libgcc-50a1296a958eb8d2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libgcc-16.2.0-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libgcc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libgcc-16.2.0-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-glibc-2.43-2.43-r15",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-glibc-2.43.yaml-f5d4080e9faabf840cf3b5d634ba78c315f39ab5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-glibc-2.43-2.43-r15",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-gitlab.com-gnutools-glibc.git-release-2.43-master-dae425b554207f7c4599c7fac707ad4c08545674-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-glibc-2.43",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-glibc-2.43-27b0046928034e47"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-glibc-2.43-2.43-r15",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-glibc-2.43"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-glibc-2.43-2.43-r15"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ld-linux-2.43-2.43-r15",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-glibc-2.43.yaml-f5d4080e9faabf840cf3b5d634ba78c315f39ab5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ld-linux-2.43-2.43-r15",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-gitlab.com-gnutools-glibc.git-release-2.43-master-dae425b554207f7c4599c7fac707ad4c08545674-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-ld-linux-2.43",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ld-linux-2.43-c46d9bccd0525541"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ld-linux-2.43-2.43-r15",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-ld-linux-2.43"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ld-linux-2.43-2.43-r15"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcrypto3-3.6.4-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-openssl.yaml-0c56fd2f294316ce2330ec14f3a845ca91c40530"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcrypto3-3.6.4-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-openssl-openssl-openssl-3.6.4-d3c1b1169b3569ff3069e5b399f47b2b28e03d79-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libcrypto3",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libcrypto3-67cecf5da8294223"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcrypto3-3.6.4-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libcrypto3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libcrypto3-3.6.4-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-gdbm-1.26-r5",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-gdbm.yaml-74465ff25399be9a58446991d3c4f364c30df9f3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-gdbm-1.26-r5",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-git.savannah.gnu.org-git-gdbm.git-v1.26-8ca8f03ab6cc125139a395ec2d522aebb15f8060-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-gdbm",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-gdbm-502ac51c75f22f96"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-gdbm-1.26-r5",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-gdbm"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-gdbm-1.26-r5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libxcrypt-4.5.2-r4",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-libxcrypt.yaml-f76d3f4a8c71191bd83630f6067bd5768445d4b9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libxcrypt-4.5.2-r4",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-besser82-libxcrypt-v4.5.2-db70b42bd7b2a5b00a8580c8dec0aa66791c950a-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libxcrypt",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libxcrypt-1cd0ddeda6223908"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libxcrypt-4.5.2-r4",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libxcrypt"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libxcrypt-4.5.2-r4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcrypt1-2.43-2.43-r15",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-glibc-2.43.yaml-f5d4080e9faabf840cf3b5d634ba78c315f39ab5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcrypt1-2.43-2.43-r15",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-gitlab.com-gnutools-glibc.git-release-2.43-master-dae425b554207f7c4599c7fac707ad4c08545674-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libcrypt1-2.43",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libcrypt1-2.43-d423d3120f6a5652"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcrypt1-2.43-2.43-r15",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libcrypt1-2.43"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libcrypt1-2.43-2.43-r15"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ncurses-terminfo-base-6.6.20260822-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-ncurses.yaml-7f5a3b0d7bb2431dbed48d246760a72d0eb1c2c8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ncurses-terminfo-base-6.6.20260822-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-ThomasDickey-ncurses-snapshots-v6C956C9520260822-b86de61d59272137acf1b14dd7fadfa5eeaab4ee-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-ncurses-terminfo-base",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ncurses-terminfo-base-c1d1b9af7cd64e72"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ncurses-terminfo-base-6.6.20260822-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-ncurses-terminfo-base"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ncurses-terminfo-base-6.6.20260822-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ncurses-6.6.20260822-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-ncurses.yaml-7f5a3b0d7bb2431dbed48d246760a72d0eb1c2c8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ncurses-6.6.20260822-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-ThomasDickey-ncurses-snapshots-v6C956C9520260822-b86de61d59272137acf1b14dd7fadfa5eeaab4ee-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-ncurses",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ncurses-e9dfb15390facd4d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ncurses-6.6.20260822-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-ncurses"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ncurses-6.6.20260822-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-readline-8.3-r2",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-readline.yaml-e402be2d67f6e4ed597bbaca3f84cc9215071ff5"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-readline-8.3-r2",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-git.savannah.gnu.org-git-readline.git-readline-8.3-447b8290b3e2e2d117dc8e9cdb83b0dc6448a638-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-readline",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-readline-26c0a8529531191c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-readline-8.3-r2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-readline"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-sqlite-libs-3.53.4-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-sqlite.yaml-844ca914d9a57afd75d3fed20edfbe8bb629a962"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-sqlite-libs-3.53.4-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-sqlite-3.53.4-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-sqlite-libs",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-sqlite-libs-9d9aa13debff5413"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-sqlite-libs-3.53.4-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-sqlite-libs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-sqlite-libs-3.53.4-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-heimdal-libs-7.8.0-r51",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-heimdal.yaml-1788db950fbaabecb02eda3b5336e24a265be27a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-heimdal-libs-7.8.0-r51",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-heimdal-heimdal-heimdal-7.8.0-a6cf94577c0d1e5bca5304342e4ddffb18255afe-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-heimdal-libs",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-heimdal-libs-b96aea44ac3e0317"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-heimdal-libs-7.8.0-r51",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-heimdal-libs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-heimdal-libs-7.8.0-r51"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-cyrus-sasl-heimdal-libs-2.1.28-r54",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-cyrus-sasl-heimdal.yaml-3b4adc6819f05a74f230e0a38a5c65b4e21db60c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-cyrus-sasl-heimdal-libs-2.1.28-r54",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-cyrusimap-cyrus-sasl.git-cyrus-sasl-2.1.28-7a6b45b177070198fed0682bea5fa87c18abb084-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-cyrus-sasl-heimdal-libs",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-cyrus-sasl-heimdal-libs-f788b1c3cea191c0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-cyrus-sasl-heimdal-libs-2.1.28-r54",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-cyrus-sasl-heimdal-libs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-cyrus-sasl-heimdal-libs-2.1.28-r54"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libbrotlicommon1-1.2.0-r3",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-brotli.yaml-805df43a1d8bc2ce041ef9f1133fd003fa8a0a10"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libbrotlicommon1-1.2.0-r3",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-google-brotli.git-v1.2.0-028fb5a23661f123017c060daa546b55cf4bde29-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libbrotlicommon1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libbrotlicommon1-e5e1345cd807dce4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libbrotlicommon1-1.2.0-r3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libbrotlicommon1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libbrotlidec1-1.2.0-r3",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-brotli.yaml-805df43a1d8bc2ce041ef9f1133fd003fa8a0a10"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libbrotlidec1-1.2.0-r3",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-google-brotli.git-v1.2.0-028fb5a23661f123017c060daa546b55cf4bde29-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libbrotlidec1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libbrotlidec1-a0bc9810507978d0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libbrotlidec1-1.2.0-r3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libbrotlidec1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-krb5-conf-1.0-r9",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-krb5-conf.yaml-bb37bc90f076f9eb2a12980e43c3f12673133835"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-krb5-conf",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-krb5-conf-255943af5e457d13"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-krb5-conf-1.0-r9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-krb5-conf"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcomC95err-1.47.4-r1",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-e2fsprogs.yaml-4cdc0f257ba04f4476c5323e52f0f389e68e534a"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcomC95err-1.47.4-r1",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-tytso-e2fsprogs-v1.47.4-7ee1d505ef3b37831215f490411f346fe57e9053-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libcom-err",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libcom-err-173718fdc3ef6cd8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libcomC95err-1.47.4-r1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libcom-err"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-keyutils-libs-1.6.3-r39",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-keyutils.yaml-c039504cb9226463ea6c7e1b81484e8480208722"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-keyutils-libs-1.6.3-r39",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-kernel.googlesource.com-pub-scm-linux-kernel-git-dhowells-keyutils.git-v1.6.3-cb3bb194cca88211cbfcdde2f10c0f43c3fb8ec3-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-keyutils-libs",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-keyutils-libs-cb2d9034bb8b4b70"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-keyutils-libs-1.6.3-r39",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-keyutils-libs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-keyutils-libs-1.6.3-r39"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libssl3-3.6.4-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-openssl.yaml-0c56fd2f294316ce2330ec14f3a845ca91c40530"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libssl3-3.6.4-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-openssl-openssl-openssl-3.6.4-d3c1b1169b3569ff3069e5b399f47b2b28e03d79-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libssl3",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libssl3-c5e7878517e2b700"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libssl3-3.6.4-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libssl3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libssl3-3.6.4-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libverto-0.3.2-r7",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-libverto.yaml-79c7eda43fae1c44ddd378bb021e59175624ad6e"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libverto-0.3.2-r7",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-latchset-libverto-0.3.2-1e8f574f702f270d96e42348e7cc088da5acc9ae-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libverto",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libverto-11e163509dfdcbe2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libverto"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libverto-0.3.2-r7"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-krb5-libs-1.22.2-r2",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-krb5.yaml-63a99011b1face0d36060eb2d4cffaf97630a578"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-krb5-libs-1.22.2-r2",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-krb5-krb5.git-krb5-1.22.2-final-8570e77819563e036027e1da789d08ec9333ed4d-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-krb5-libs",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-krb5-libs-4fc06df3a9014f46"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-krb5-libs-1.22.2-r2",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-krb5-libs"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-krb5-libs-1.22.2-r2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libunistring-1.4.2-r2",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-libunistring.yaml-44bcd0af195f786e83f248bcef66933277c1d6c9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libunistring-1.4.2-r2",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-https.git.savannah.gnu.org-git-libunistring.git-v1.4.2-7dee51196310a703972a94843ecaf92decce6f82-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libunistring",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libunistring-6c43e38033cd8029"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libunistring-1.4.2-r2",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libunistring"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libunistring-1.4.2-r2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libidn2-2.3.8-r8",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-libidn2.yaml-595a540b3af03caf88af1e6260b49cf9c71f5a58"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libidn2-2.3.8-r8",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-gitlab.com-libidn-libidn2-v2.3.8-9bc3ac79e2ae81ade245a0e308bf13c981efaa83-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libidn2",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libidn2-04d4bd49032c04b9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libidn2-2.3.8-r8",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libidn2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libidn2-2.3.8-r8"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libldap-2.7-2.7.0-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-openldap-2.7.yaml-99228f4d96e21e906de4cc861336c3d5a6223bdb"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libldap-2.7-2.7.0-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-openldap-openldap.git-OPENLDAPC95RELC95ENGC952C957C950-cbc3211e0f9c01e4fbf5c795ccdffd57d9ce660b-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libldap-2.7",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libldap-2.7-781b69d4dcbb0d02"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libldap-2.7-2.7.0-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libldap-2.7"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libldap-2.7-2.7.0-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libnghttp2-14-1.70.0-r2",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-nghttp2.yaml-0f75043dd5e2102707470616302978a67908b9a9"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libnghttp2-14-1.70.0-r2",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-nghttp2-nghttp2.git-v1.70.0-85e300c79fb6dbcfa9c1013215c8710c1c2cd3d2-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libnghttp2-14",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libnghttp2-14-e731cda7d80fd74d"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libnghttp2-14-1.70.0-r2",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libnghttp2-14"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libnghttp2-14-1.70.0-r2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-nghttp3-1.18.0-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-nghttp3.yaml-dd1909716244bf3f0249d70a7d38d74b0c9d80d4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-nghttp3-1.18.0-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-ngtcp2-nghttp3.git-v1.18.0-dbfc24286138cb0b6490160e7ca87fe1ce6722a0-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-nghttp3",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-nghttp3-1e42d6a89ac1ac9c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-nghttp3-1.18.0-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-nghttp3"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-nghttp3-1.18.0-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ngtcp2-1.25.0-r1",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-ngtcp2.yaml-bc7281ed42082b787ebe1bdbb5805b377f6ccb4b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ngtcp2-1.25.0-r1",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-ngtcp2-ngtcp2.git-v1.25.0-f9e9ff01ad2c8116bc09de4f644b0028a61486a6-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-ngtcp2",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ngtcp2-12e525e85e80eaed"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-ngtcp2-1.25.0-r1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-ngtcp2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-ngtcp2-1.25.0-r1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libpsl-0.23.3-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-libpsl.yaml-ef283b0ab2e85b3f4945289fd0aedf0b9cb6ffec"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libpsl-0.23.3-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-rockdaboot-libpsl.git-0.23.3-c486db8d221cbac55f87508d4da4db4497760997-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libpsl",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libpsl-f34f70426a16da6f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libpsl-0.23.3-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libpsl"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libpsl-0.23.3-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-zlib-1.3.2-r4",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-zlib.yaml-a27721c97b2bffc54141307e511a494d464d5459"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-zlib-1.3.2-r4",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-madler-zlib.git-v1.3.2-da607da739fa6047df13e66a2af6b8bec7c2a498-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-zlib",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-zlib-843cff951d1b36dd"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-zlib-1.3.2-r4",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-zlib"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-zlib-1.3.2-r4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcurl-openssl4-8.21.0-r2",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-curl.yaml-d9151d6ec33f7f8eee21cf38c72d040a983c48ea"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcurl-openssl4-8.21.0-r2",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-curl-curl.git-curl-8C9521C950-68720b4837284335b2d63cb358f8f6ce65f5bc55-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libcurl-openssl4",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libcurl-openssl4-bc78ba14a5deba14"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libcurl-openssl4-8.21.0-r2",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libcurl-openssl4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libcurl-openssl4-8.21.0-r2"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libexpat1-2.8.3-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-expat.yaml-82cb5e4b97103dd06a6ff290c2194be5027dcd5c"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libexpat1-2.8.3-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-github.com-libexpat-libexpat-RC952C958C953-92810461043fce37e70079b37ab1f04490a8f039-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-libexpat1",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libexpat1-d8e23f48c1f5919f"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-libexpat1-2.8.3-r0",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-libexpat1"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-libexpat1-2.8.3-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-libpcre2-8-0-10.47-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-pcre2.yaml-f32cf65408ccd2e4697e20716953decd6fc0ea1b"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-libpcre2-8-0-10.47-r0",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-github.com-PCRE2Project-pcre2.git-pcre2-10.47-f454e231fe5006dd7ff8f4693fd2b8eb94333429-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-libpcre2-8-0-10.47-r0"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-git-2.55.0-r4",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange-git.yaml-b9edbdf381f4f22ef5bb6e3a5123567b52dfe003"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-git-2.55.0-r4",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-Package-Source-kernel.googlesource.com-pub-scm-git-git.git-v2.55.0-e9019fcafe0040228b8631c30f97ae1adb61bcdc-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-DocumentRoot-Directory-git",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-git-3fedd897d4475d75"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-git-2.55.0-r4",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-DocumentRoot-Directory-git"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-git-2.55.0-r4"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-apk-styrene-git-functional-0.1.0-r0",
+      "relationshipType": "DESCRIBED_BY",
+      "relatedSpdxElement": "SPDXRef-Package-Melange--work-infra-packaging-styrene-git.melange.yaml-unknown"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-Image-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-Package-apk-styrene-git-functional-0.1.0-r0"
+    }
+  ]
+}

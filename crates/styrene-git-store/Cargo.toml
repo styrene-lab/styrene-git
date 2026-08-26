@@ -1,0 +1,19 @@
+[package]
+name = "styrene-git-store"
+description = "Bare Git storage, publisher namespaces, and quarantine for Styrene Git"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+hex.workspace = true
+styrene-git-core.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+ed25519-dalek.workspace = true
+
+[lints]
+workspace = true

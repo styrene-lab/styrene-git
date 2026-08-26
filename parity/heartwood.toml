@@ -1,0 +1,233 @@
+schema = 1
+
+[upstream]
+name = "Radicle Heartwood"
+url = "https://github.com/radicle-dev/heartwood"
+revision = "3da781f9e17789a030703db8f61ca2abe21b78a7"
+role = "behavioral-reference"
+reviewed_at = "2026-08-25"
+
+[gates.fast]
+status = "active"
+command = "just check"
+
+[gates.pre-push]
+status = "active"
+command = "just pre-push"
+
+[gates.container]
+status = "active"
+command = "just container"
+
+[gates.cross-platform]
+status = "active"
+command = "GitHub Actions ci.yml matrix"
+
+[gates.property]
+status = "active"
+command = "just property"
+
+[gates.git-black-box]
+status = "planned"
+command = "cargo test --workspace parity_git_black_box"
+
+[gates.quarantine-adversarial]
+status = "planned"
+command = "cargo test --workspace parity_quarantine_adversarial"
+
+[gates.crash-recovery]
+status = "planned"
+command = "cargo test --workspace parity_crash_recovery"
+
+[gates.daemon-lifecycle]
+status = "planned"
+command = "cargo test --workspace parity_daemon_lifecycle"
+
+[[checks]]
+id = "HW-IDENTITY-CANONICAL"
+decision = "adopt"
+status = "covered"
+gate = "pre-push"
+upstream = ["crates/radicle/src/identity/doc.rs#test_canonical_doc", "crates/radicle/src/identity/doc.rs#prop_encode_decode"]
+local = ["crates/styrene-git-core/tests/spike.rs"]
+rationale = "Canonical identity bytes and decode rejection are part of the Styrene trust boundary."
+
+[[checks]]
+id = "HW-IDENTITY-PRIOR-POLICY"
+decision = "adopt"
+status = "covered"
+gate = "pre-push"
+upstream = ["crates/radicle/src/cob/identity/test/property.rs#assert_verdicts_match_parent_delegates", "crates/radicle-cli/tests/commands/id.rs#rad_id_unauthorized_delegate"]
+local = ["crates/styrene-git-core/tests/spike.rs"]
+rationale = "Identity transitions must use the delegate policy of their causal parent."
+
+[[checks]]
+id = "HW-IDENTITY-MODEL-INVARIANTS"
+decision = "adopt"
+status = "partial"
+gate = "property"
+upstream = ["crates/radicle/src/cob/identity/test/property.rs#prop_invariants"]
+local = ["crates/styrene-git-core/tests/parity_property.rs"]
+rationale = "Generated linear histories now prove prior-policy quorum and lineage. Delivery-order convergence and retained conflict evidence remain open."
+
+[[checks]]
+id = "HW-SIGNED-REF-CONTEXT"
+decision = "adopt"
+status = "covered"
+gate = "pre-push"
+upstream = ["crates/radicle/src/storage/refs.rs#test_rid_verification", "crates/radicle/src/storage/refs/sigrefs/read/test/signed_refs_reader.rs#invalid_parent"]
+local = ["crates/styrene-git-core/tests/spike.rs", "crates/styrene-git-store/tests/store.rs"]
+rationale = "Signed states must reject repository, publisher, parent, and sequence transplantation."
+
+[[checks]]
+id = "HW-SIGNED-REF-PROPERTIES"
+decision = "adopt"
+status = "partial"
+gate = "property"
+upstream = ["crates/radicle/src/storage/refs/sigrefs/property.rs#roundtrip", "crates/radicle/src/storage/refs/sigrefs/git/properties.rs#chain_roundtrip"]
+local = ["crates/styrene-git-core/tests/spike.rs", "crates/styrene-git-store/tests/store.rs"]
+rationale = "Scenario tests exist, but generated complete maps and long transition chains do not."
+
+[[checks]]
+id = "HW-NAMESPACE-ISOLATION"
+decision = "adopt"
+status = "covered"
+gate = "pre-push"
+upstream = ["crates/radicle-node/src/tests/e2e.rs#test_fetch_preserve_owned_refs", "crates/radicle-node/src/tests/e2e.rs#test_dont_fetch_owned_refs"]
+local = ["crates/styrene-git-store/tests/store.rs"]
+rationale = "One publisher update must not alter another publisher namespace."
+
+[[checks]]
+id = "HW-REPLICATION-IDEMPOTENCY"
+decision = "adopt"
+status = "covered"
+gate = "pre-push"
+upstream = ["crates/radicle-node/src/tests/e2e.rs#test_fetch_up_to_date", "crates/radicle-protocol/src/fetcher/test/state/command/fetch.rs#fetch_duplicate_returns_already_fetching"]
+local = ["crates/styrene-git-protocol/tests/replication.rs"]
+rationale = "Duplicate and concurrent delivery must converge on one accepted transition."
+
+[[checks]]
+id = "HW-TRANSFER-LIMITS"
+decision = "adopt"
+status = "covered"
+gate = "pre-push"
+upstream = ["crates/radicle-node/src/tests/e2e.rs#test_channel_reader_limit", "crates/radicle-node/src/tests/e2e.rs#test_large_fetch"]
+local = ["crates/styrene-git-protocol/tests/replication.rs"]
+rationale = "Pack production and transfer application must enforce explicit size limits."
+
+[[checks]]
+id = "HW-QUARANTINE-ADVERSARIAL"
+decision = "adopt"
+status = "partial"
+gate = "quarantine-adversarial"
+upstream = ["crates/radicle-fetch/src/transport/fetch.rs#PackWriter::write_pack", "crates/radicle-node/src/tests/e2e.rs#test_replication_invalid"]
+local = ["crates/styrene-git-store/tests/store.rs", "crates/styrene-git-protocol/tests/replication.rs"]
+rationale = "Styrene has stronger quarantine semantics, but still needs corrupt-pack, delta, interruption, and cleanup corpora."
+
+[[checks]]
+id = "HW-ATOMIC-CRASH-RECOVERY"
+decision = "adopt"
+status = "gap"
+gate = "crash-recovery"
+upstream = ["crates/radicle-fetch/src/state.rs#FetchState::run_stage"]
+local = []
+rationale = "Process interruption at promotion and ref-transaction boundaries needs explicit old-or-new recovery tests."
+
+[[checks]]
+id = "HW-REMOTE-HELPER-PARSER"
+decision = "adopt"
+status = "gap"
+gate = "git-black-box"
+upstream = ["crates/radicle-remote-helper/src/protocol.rs#test_capabilities", "crates/radicle-remote-helper/src/protocol.rs#test_push_delete", "crates/radicle-remote-helper/src/protocol.rs#test_invalid"]
+local = []
+rationale = "The future helper needs exact parser and status-line coverage for the Git remote-helper protocol."
+
+[[checks]]
+id = "HW-GIT-BLACK-BOX"
+decision = "adopt"
+status = "gap"
+gate = "git-black-box"
+upstream = ["crates/radicle-cli/tests/commands/git.rs#git_push_and_fetch", "crates/radicle-cli/tests/commands/git.rs#git_push_force_with_lease", "crates/radicle-cli/tests/commands/git.rs#git_tag"]
+local = []
+rationale = "Real Git must prove clone, fetch, push, deletion, divergence, tags, and checkout through styrene URLs."
+
+[[checks]]
+id = "HW-DETERMINISTIC-GIT-FIXTURES"
+decision = "adopt"
+status = "partial"
+gate = "git-black-box"
+upstream = ["crates/radicle/src/test/fixtures.rs", "crates/radicle-cli/tests/util/environment.rs"]
+local = ["crates/styrene-git-protocol/tests/replication.rs"]
+rationale = "Current fixtures fix keys and commit metadata, but a reusable black-box environment is still missing."
+
+[[checks]]
+id = "HW-SHA256-INTEROP"
+decision = "adopt"
+status = "partial"
+gate = "git-black-box"
+upstream = ["crates/radicle-cli/tests/commands/git.rs#git_push_and_fetch"]
+local = ["crates/styrene-git-store/tests/store.rs", "crates/styrene-git-protocol/tests/replication.rs"]
+rationale = "Store and pack tests use SHA-256, but ordinary Git clone, fetch, and push are not covered yet."
+
+[[checks]]
+id = "HW-CROSS-PLATFORM-GIT"
+decision = "adopt"
+status = "partial"
+gate = "cross-platform"
+upstream = [".github/workflows/build.yml"]
+local = [".github/workflows/ci.yml"]
+rationale = "Git subprocess, path, lock, and filesystem behavior needs Linux, macOS, and Windows coverage."
+
+[[checks]]
+id = "HW-DAEMON-OPERATION-LIFECYCLE"
+decision = "adopt"
+status = "gap"
+gate = "daemon-lifecycle"
+upstream = ["crates/radicle-protocol/src/fetcher/test/state/concurrent.rs#interleaved_operations", "crates/radicle-protocol/src/fetcher/test/state/command/cancel.rs#cancellation_is_isolated"]
+local = []
+rationale = "Styrened needs durable queue, retry, cancellation, timeout, restart, and observation tests."
+
+[[checks]]
+id = "HW-CANONICAL-WILDCARD-RULES"
+decision = "defer"
+status = "deferred"
+gate = "property"
+upstream = ["crates/radicle/src/git/canonical/rules/test.rs#matches_expands_globs_appropriately"]
+local = []
+rationale = "Styrene currently canonicalizes only the configured default branch."
+
+[[checks]]
+id = "HW-RAD-SIGREFS-MIGRATION"
+decision = "skip"
+status = "skipped"
+gate = "pre-push"
+upstream = ["crates/radicle/src/storage/refs/sigrefs/read/test/signed_refs_reader.rs"]
+local = []
+rationale = "Styrene uses explicit versioned CBOR transitions instead of rad/sigrefs Git commits and feature levels."
+
+[[checks]]
+id = "HW-COB-IDENTITY-VOTING"
+decision = "skip"
+status = "skipped"
+gate = "pre-push"
+upstream = ["crates/radicle/src/cob/identity/test/property.rs"]
+local = []
+rationale = "The COB voting and redaction state machine is not Styrene identity governance."
+
+[[checks]]
+id = "HW-NODE-GOSSIP-SEEDING"
+decision = "skip"
+status = "skipped"
+gate = "daemon-lifecycle"
+upstream = ["crates/radicle-node/src/tests/e2e.rs#test_replication_via_seed"]
+local = []
+rationale = "Peer, carrier, route, and seeding policy belongs to styrened and does not authorize repository state."
+
+[[checks]]
+id = "HW-PRODUCTION-ODB-PACK-WRITE"
+decision = "skip"
+status = "skipped"
+gate = "quarantine-adversarial"
+upstream = ["crates/radicle-fetch/src/transport/fetch.rs#PackWriter::write_pack"]
+local = []
+rationale = "Heartwood writes packs before signed-state validation. Styrene requires transfer-scoped quarantine."

@@ -1,0 +1,30 @@
+package:
+  name: styrened-git-lab
+  version: 0.3.0
+  epoch: 0
+  description: Styrene daemon and IPC client for the Git functional lab
+  copyright:
+    - license: MIT
+
+environment:
+  contents:
+    repositories:
+      - https://packages.wolfi.dev/os
+    keyring:
+      - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+    packages:
+      - build-base
+      - busybox
+      - cmake
+      - openssl-dev
+      - pkgconf
+      - rust-1.97
+
+pipeline:
+  - runs: |
+      cargo build --release --locked -p styrened
+      cargo build --release --locked -p styrene --no-default-features --features cli
+      install -Dm755 target/release/styrened \
+        "${{targets.destdir}}/usr/bin/styrened"
+      install -Dm755 target/release/styrene \
+        "${{targets.destdir}}/usr/bin/styrene"

@@ -1,0 +1,52 @@
+services:
+  alice:
+    image: localhost/styrene-git-functional:dev
+    command: ["operator", "alice", "1", "0.0.0.0:7800", "/state"]
+    volumes:
+      - alice-state:/state
+    networks:
+      control:
+        aliases: [alice-control]
+      carrier:
+        aliases: [alice-carrier]
+
+  bob:
+    image: localhost/styrene-git-functional:dev
+    command: ["operator", "bob", "2", "0.0.0.0:7800", "/state"]
+    volumes:
+      - bob-state:/state
+    networks:
+      control:
+        aliases: [bob-control]
+      carrier:
+        aliases: [bob-carrier]
+
+  carol:
+    image: localhost/styrene-git-functional:dev
+    command: ["operator", "carol", "3", "0.0.0.0:7800", "/state"]
+    volumes:
+      - carol-state:/state
+    networks:
+      control:
+        aliases: [carol-control]
+      carrier:
+        aliases: [carol-carrier]
+
+  scenario:
+    image: localhost/styrene-git-functional:dev
+    command: ["scenario", "/artifacts/three-party.json"]
+    depends_on: [alice, bob, carol]
+    volumes:
+      - ./artifacts:/artifacts
+    networks: [control, carrier]
+
+networks:
+  control:
+    internal: true
+  carrier:
+    internal: true
+
+volumes:
+  alice-state:
+  bob-state:
+  carol-state:

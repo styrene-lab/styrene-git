@@ -1,0 +1,18 @@
+[package]
+name = "styrene-git-ipc"
+description = "Typed local daemon contract for Styrene Git operations"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+minicbor.workspace = true
+styrene-git-core.workspace = true
+
+[dev-dependencies]
+hex.workspace = true
+
+[lints]
+workspace = true

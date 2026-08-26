@@ -1,0 +1,25 @@
+[package]
+name = "styrene-git-functional"
+description = "Test-only multi-operator functional harness for Styrene Git"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[[bin]]
+name = "styrene-git-lab"
+path = "src/main.rs"
+
+[dependencies]
+ed25519-dalek.workspace = true
+hex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+styrene-git-core.workspace = true
+styrene-git-protocol.workspace = true
+styrene-git-store.workspace = true
+
+[lints]
+workspace = true

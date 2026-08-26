@@ -1,0 +1,73 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "sbom-sha256:18088b11fe9e43a53eba0b820862621faab37849c32d9ef0e352459b493f72ee",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-08-25T13:25:39Z",
+    "creators": [
+      "Tool: apko (v1.2.40)",
+      "Organization: Chainguard, Inc"
+    ],
+    "licenseListVersion": "3.27"
+  },
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://spdx.org/spdxdocs/apko/",
+  "documentDescribes": [
+    "SPDXRef-Package-sha256-18088b11fe9e43a53eba0b820862621faab37849c32d9ef0e352459b493f72ee"
+  ],
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Package-sha256-18088b11fe9e43a53eba0b820862621faab37849c32d9ef0e352459b493f72ee",
+      "name": "sha256:18088b11fe9e43a53eba0b820862621faab37849c32d9ef0e352459b493f72ee",
+      "versionInfo": "sha256:18088b11fe9e43a53eba0b820862621faab37849c32d9ef0e352459b493f72ee",
+      "filesAnalyzed": false,
+      "description": "Multi-arch image index",
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Chainguard, Inc.",
+      "sourceInfo": "Generated at image build time by apko",
+      "primaryPackagePurpose": "CONTAINER",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "18088b11fe9e43a53eba0b820862621faab37849c32d9ef0e352459b493f72ee"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/styrene-git-functional@sha256:18088b11fe9e43a53eba0b820862621faab37849c32d9ef0e352459b493f72ee?mediaType=application%2Fvnd.oci.image.index.v1%2Bjson",
+          "referenceType": "purl"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Package-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "name": "sha256:b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "versionInfo": "sha256:b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d",
+      "filesAnalyzed": false,
+      "downloadLocation": "NOASSERTION",
+      "supplier": "Organization: Chainguard, Inc.",
+      "primaryPackagePurpose": "CONTAINER",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d"
+        }
+      ],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:oci/styrene-git-functional@sha256:b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d?arch=arm64\u0026mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson\u0026os=linux",
+          "referenceType": "purl"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-Package-sha256-18088b11fe9e43a53eba0b820862621faab37849c32d9ef0e352459b493f72ee",
+      "relationshipType": "VARIANT_OF",
+      "relatedSpdxElement": "SPDXRef-Package-sha256-b1696147ccf93bcf6b8f2b967f87465609bb027eb27713c4971e49aa0386c52d"
+    }
+  ]
+}
