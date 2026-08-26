@@ -602,21 +602,14 @@ fn promote_objects(source: &Path, destination: &Path) -> Result<(), StoreError> 
                 .map_err(|error| io_error(&destination_path, error))?;
             promote_objects(&source_path, &destination_path)?;
         } else if !destination_path.exists() {
-            let temporary = destination_path.with_extension(format!(
-                "s{}-{}",
-                std::process::id(),
-                QUARANTINE_SEQUENCE.fetch_add(1, Ordering::Relaxed)
-            ));
-            fs::copy(&source_path, &temporary).map_err(|error| io_error(&temporary, error))?;
-            let file = fs::File::open(&temporary).map_err(|error| io_error(&temporary, error))?;
+            let file =
+                fs::File::open(&source_path).map_err(|error| io_error(&source_path, error))?;
             file.sync_all()
-                .map_err(|error| io_error(&temporary, error))?;
+                .map_err(|error| io_error(&source_path, error))?;
             drop(file);
-            match fs::rename(&temporary, &destination_path) {
+            match fs::hard_link(&source_path, &destination_path) {
                 Ok(()) => {}
-                Err(error) if error.kind() == std::io::ErrorKind::AlreadyExists => {
-                    fs::remove_file(&temporary).map_err(|source| io_error(&temporary, source))?;
-                }
+                Err(error) if error.kind() == std::io::ErrorKind::AlreadyExists => {}
                 Err(error) => return Err(io_error(&destination_path, error)),
             }
         }
